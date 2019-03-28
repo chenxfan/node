@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+			用户名<input id="name" type="text" name="name"><br/>
+			密码<input id="password" type="text" name="password"><br/>
+			确认密码<input id="pwd" type="text" ><br/>
+			<button onclick="tj()" text="tj"></button>
+	</body>
+	<script>
+		let userIpt = document.getElementById("name");
+		let pwdIpt = document.getElementById("pwd");
+		function tj(){
+			let obj={
+				user:userIpt.value,
+				pwd:pwdIpt.value
+			}
+			let xhr = new XMLHttpRequest();
+			xhr.open("post","/doregister",false);
+			xhr.onreadystatechange = function() {
+				let obj1 = JSON.parse(xhr.responseText);
+				if(obj1.success==1){
+					alert(obj1.message);
+				}
+			}
+			xhr.send(JSON.stringify(obj));
+		}
+	</script>
+</html>

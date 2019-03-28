@@ -1,0 +1,132 @@
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(-80px)
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0)
+	}
+}
+
+@keyframes scaleOutCenter {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes Rotate {
+	0% {
+		opacity: 1;
+		transform: rotate(0);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes Down {
+	0% {
+		transform: translateY(-80px) rotateX(180deg)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0) rotateX(180deg)
+	}
+}
+
+@keyframes page2_Up {
+	0% {
+		opacity: 0;
+		transform: translateY(80px)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0)
+	}
+}
+#pg2 img:first-child {
+	width: 20.9%;
+	position: absolute;
+	left: 2.4%;
+	top: 6%;
+	opacity: 0;
+	animation: scaleOutCenter 1s 0.2s 1 forwards;
+}
+
+#pg2 img:nth-of-type(2) {
+	width: 11.1%;
+	height: 5.9%;
+	position: absolute;
+	left: 24%;
+	top: 22%;
+	opacity: 0;
+	animation: fadeInRight 1s 0.5s 1 forwards;
+}
+#pg2 img:nth-of-type(3) {
+	width: 76.7%;
+	position: absolute;
+	left: 21.996%;
+	top: 28.4%;
+	opacity: 0;
+}
+
+.animation1 {
+	animation: bounceInCenter 1s ease 0.5s 1 forwards;
+}
+
+.animation2 {
+	animation: Rotate 7.6s linear infinite;
+}
+
+#pg2 img:nth-of-type(4) {
+	width: 29.9%;
+	position: absolute;
+	left: 45.2967%;
+	top: 4.5%;
+	opacity: 0;
+	animation: Down 1s 1s 1 forwards;
+}
+
+#pg2 img:nth-of-type(5) {
+	width: 29.9%;
+	position: absolute;
+	left: 45.2967%;
+	top: 62.2027%;
+	opacity: 0;
+	animation: page2_Up 1s 1s 1 forwards;
+}
+
+#pg2 img:nth-of-type(6) {
+	width: 70%;
+	position: absolute;
+	left: 25.0%;
+	top: 29.4%;
+	opacity: 0;
+	animation: bounceInCenter 1s ease 0.8s 1 forwards;
+}
+
+#pg2 img:nth-of-type(7) {
+	width: 10%;
+	position: absolute;
+	left: 10.0%;
+	top: 61.4%;
+	opacity: 0;
+	animation: page2_Up 1s 1.4s 1 forwards
+}
+
+#pg2 img:nth-of-type(8) {
+	width: 10%;
+	position: absolute;
+	left: 19.0%;
+	top: 61.4%;
+	opacity: 0;
+	animation: page2_Up 1s 1.2s 1 forwards
+}
